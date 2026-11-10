@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-header: #123D32;
+    --color-bg: #FAF8F3;
+    --color-card: #FFFFFF;
+    --color-text: #202923;
+    --color-text-secondary: #66736C;
+    --color-primary: #1E6652;
+    --color-gold: #B49352;
+    --color-border: #DFE7DF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Ayah anchors should account for sticky headers and audio player */
+  [id^="ayah-"] {
+    scroll-margin-top: 130px;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+  font-feature-settings: "cv01", "ss01";
+}
+
+.font-arabic-scheherazade {
+  font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif;
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', 'Urdu Typesetting', serif;
+}
+
+/* Custom scrollbars for clean reading experience */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFE7DF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B49352;
+}
+
+/* Quranic verse number end symbol styling */
+.ayah-end-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  user-select: none;
+}

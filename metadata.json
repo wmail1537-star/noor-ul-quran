@@ -1,0 +1,8 @@
+{
+  "name": "Noor-ul-Quran",
+  "description": "Read, Listen & Understand the Quran with Urdu translation and authentic recitation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
